@@ -123,5 +123,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "serve": "^10.1.1"
   }
 }
