@@ -1,9 +1,8 @@
 /* eslint-disable no-restricted-globals */
 
-console.log("Hi sw.js")
-
-// workbox.skipWaiting()
-// workbox.clientsClaim()
+workbox.setConfig({
+  debug: true
+})
 
 // workbox.routing.registerRoute(
 //   new RegExp("https:.*min.(css|js)"),
