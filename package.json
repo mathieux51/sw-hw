@@ -59,7 +59,14 @@
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "env": {
+      "browser": true,
+      "worker": true
+    },
+    "globals": {
+      "workbox": true
+    }
   },
   "browserslist": [
     ">0.2%",
