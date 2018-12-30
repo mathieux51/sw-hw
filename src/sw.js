@@ -1,4 +1,7 @@
 /* eslint-disable no-restricted-globals */
+
+console.log("Hi sw.js")
+
 workbox.skipWaiting()
 workbox.clientsClaim()
 
@@ -9,9 +12,9 @@ workbox.routing.registerRoute(
   })
 )
 
-workbox.routing.registerRoute(
-  new RegExp("http://.*:4567.*.json"),
-  workbox.strategies.networkFirst()
-)
+// workbox.routing.registerRoute(
+//   new RegExp("http://.*:4567.*.json"),
+//   workbox.strategies.networkFirst()
+// )
 
 workbox.precaching.precacheAndRoute(self.__precacheManifest || [])
