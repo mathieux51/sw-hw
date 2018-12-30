@@ -1,6 +1,5 @@
 {
   "name": "hw",
-  "homepage": "https://mathieux51.github.io/sw-hw",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
